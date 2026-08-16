@@ -25,6 +25,7 @@ This repository accompanies the following research article:
 - Shahin Atashbar Tehrani
 - Javad Sheibani
 - Elham Astaraki
+- Reyhaneh Farashaiian
 
 **Preprint:** [arXiv:2607.28105 [hep-ph] (2026)](https://arxiv.org/abs/2607.28105)
 
