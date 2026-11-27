@@ -26,6 +26,7 @@ This repository accompanies the following research article:
 - Javad Sheibani
 - Elham Astaraki
 - Reyhaneh Farashaiian
+- Kourosh (Rouhollah) Gheisar
 
 **Preprint:** [arXiv:2607.28105 [hep-ph] (2026)](https://arxiv.org/abs/2607.28105)
 
