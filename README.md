@@ -68,14 +68,14 @@ xF3-Laplace-DGLAP-Solver/
 │   │   └── xf3laplaceNLO.nb
 │   │
 │   ├── Fortran/
-│   │   ├── dglap_evolution_nlo.f
-│   │   ├── input_parameters.f
-│   │   ├── jacobi_reconstruction.f
-│   │   ├── nlo_fit_230_data.f
-│   │   └── psi_functions.f
+│   │   ├── evolution2.f
+│   │   ├── input2.f
+│   │   ├── jacobi.f
+│   │   ├── NLO-main.f
+│   │   └── psi.f
 │   │
 │   ├── Input/
-│   │   └── xF3_230_data.dat
+│   │   └── 781.dat
 │   │
 │   └── Output/
 │       └── nlo_fit_results.txt
@@ -85,15 +85,15 @@ xF3-Laplace-DGLAP-Solver/
     │   └── xf3laplaceNNLO.nb
     │
     ├── Fortran/
-    │   ├── dglap_evolution_nnlo.f
-    │   ├── input_parameters.f
-    │   ├── jacobi_reconstruction.f
-    │   ├── minuit_fit_230_data.f
-    │   ├── psi_functions.f
-    │   └── wilson_coefficients.f
+    │   ├── evolution2.f
+    │   ├── input2.f
+    │   ├── jacobi.f
+    │   ├── NNLO-main.f
+    │   ├── psi.f
+    │   └── wilson.f
     │
     ├── Input/
-    │   └── xF3_230_data.dat
+    │   └── 781.dat
     │
     └── Output/
         └── nnlo_fit_results.txt
