@@ -1,5 +1,5 @@
 ```markdown
-# xF3 Laplace DGLAP Solver (NLO & NNLO)
+# xF3 F2 Laplace DGLAP Solver (NLO & NNLO)
 
 [![Wolfram Mathematica](https://img.shields.io/badge/Wolfram-Mathematica-red)](https://www.wolfram.com/mathematica/)
 [![Fortran](https://img.shields.io/badge/Language-Fortran-blue)](https://fortran-lang.org/)
