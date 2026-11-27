@@ -65,7 +65,7 @@ xF3-Laplace-DGLAP-Solver/
 │
 ├── NLO/
 │   ├── Mathematica/
-│   │   └── xF3_Laplace_DGLAP_NLO.nb
+│   │   └── xf3laplaceNLO.nb
 │   │
 │   ├── Fortran/
 │   │   ├── dglap_evolution_nlo.f
@@ -82,7 +82,7 @@ xF3-Laplace-DGLAP-Solver/
 │
 └── NNLO/
     ├── Mathematica/
-    │   └── xF3_Laplace_DGLAP_NNLO.nb
+    │   └── xf3laplaceNNLO.nb
     │
     ├── Fortran/
     │   ├── dglap_evolution_nnlo.f
