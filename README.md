@@ -101,27 +101,7 @@ xF3-Laplace-DGLAP-Solver/
 
 ---
 
-## File Organization
 
-| Original file | Recommended repository location |
-|:--|:--|
-| `xf3laplaceNLOfor test230 data ggen result nuclear input.nb` | `NLO/Mathematica/xF3_Laplace_DGLAP_NLO.nb` |
-| `xf3laplaceNNLO2ggen230datanuclear.nb` | `NNLO/Mathematica/xF3_Laplace_DGLAP_NNLO.nb` |
-| `NLO/evoloutionNLO2.f` | `NLO/Fortran/dglap_evolution_nlo.f` |
-| `NLO/input2.f` | `NLO/Fortran/input_parameters.f` |
-| `NLO/jacobi.f` | `NLO/Fortran/jacobi_reconstruction.f` |
-| `NLO/NLO-2016-230.f` | `NLO/Fortran/nlo_fit_230_data.f` |
-| `NLO/psifcts.f` | `NLO/Fortran/psi_functions.f` |
-| `NNLO/evoloutionNNLO2.f` | `NNLO/Fortran/dglap_evolution_nnlo.f` |
-| `NNLO/input2.f` | `NNLO/Fortran/input_parameters.f` |
-| `NNLO/jacobi.f` | `NNLO/Fortran/jacobi_reconstruction.f` |
-| `NNLO/MINUITNLO6fix230data.f` | `NNLO/Fortran/minuit_fit_230_data.f` |
-| `NNLO/psifcts.f` | `NNLO/Fortran/psi_functions.f` |
-| `NNLO/wilson.f` | `NNLO/Fortran/wilson_coefficients.f` |
-| `NLO/230.dat` | `NLO/Input/xF3_230_data.dat` |
-| `NNLO/230.dat` | `NNLO/Input/xF3_230_data.dat` |
-| `NLO/NLO-Final-2-gegen-230-nuclear.txt` | `NLO/Output/nlo_fit_results.txt` |
-| `NNLO/f90-windows-230datafixgegennuclear.txt` | `NNLO/Output/nnlo_fit_results.txt` |
 
 ---
 
@@ -129,7 +109,7 @@ xF3-Laplace-DGLAP-Solver/
 
 ### Mathematica workflow
 
-- **Wolfram Mathematica 13.0** or newer.
+- **Wolfram Mathematica 15.0** or newer.
 
 Earlier versions may work, but have not been systematically tested.
 
@@ -141,98 +121,8 @@ Earlier versions may work, but have not been systematically tested.
 
 ---
 
-## Running the Mathematica Notebooks
 
-### NLO analysis
 
-1. Open the notebook:
-
-   ```text
-   NLO/Mathematica/xF3_Laplace_DGLAP_NLO.nb
-   ```
-
-2. Check the input-data path and numerical parameters.
-
-3. Evaluate the notebook sequentially from the first cell.
-
-4. The notebook produces evolved \(xF_3\) distributions, numerical predictions, fitted quantities, tables, and figures.
-
-### NNLO analysis
-
-1. Open the notebook:
-
-   ```text
-   NNLO/Mathematica/xF3_Laplace_DGLAP_NNLO.nb
-   ```
-
-2. Check the input-data path and model parameters.
-
-3. Evaluate all cells sequentially.
-
-4. The notebook produces NNLO predictions, fitted quantities, numerical tables, and figures.
-
----
-
-## Running the Fortran Codes
-
-The Fortran sources are provided as numerical implementations of the evolution, Jacobi reconstruction, Wilson-coefficient evaluation, and fitting procedures.
-
-A typical compilation command using `gfortran` may have the form:
-
-```bash
-gfortran -O2 \
-  dglap_evolution_nlo.f \
-  input_parameters.f \
-  jacobi_reconstruction.f \
-  psi_functions.f \
-  nlo_fit_230_data.f \
-  -o xF3_nlo_fit
-```
-
-The exact compilation command may require adjustment depending on the compiler, operating system, and external MINUIT configuration.
-
-> **Note:** The NNLO fitting source includes a MINUIT-related program file. Please ensure that the appropriate MINUIT library is installed and linked if required by your local setup.
-
----
-
-## Input Data
-
-The repository includes the 230-point DIS dataset used in the numerical analysis.
-
-The input files are located at:
-
-```text
-NLO/Input/xF3_230_data.dat
-```
-
-and
-
-```text
-NNLO/Input/xF3_230_data.dat
-```
-
-If an original notebook or Fortran source contains an absolute local path, replace it with the appropriate relative path before execution.
-
----
-
-## Theoretical Framework
-
-The calculation is based on perturbative Quantum Chromodynamics (QCD) and the non-singlet DGLAP evolution equation. A Laplace transform converts the convolution structure of the evolution equation into products in transform space, enabling an analytical or semi-analytical treatment of the scale evolution.
-
-The resulting structure function is reconstructed in Bjorken-\(x\) space using a Jacobi-polynomial expansion.
-
-Schematically, the perturbative expansion is
-
-\[
-xF_3(x,Q^2)
-=
-xF_3^{\mathrm{LO}}(x,Q^2)
-+
-\alpha_s(Q^2)\,xF_3^{\mathrm{NLO}}(x,Q^2)
-+
-\alpha_s^2(Q^2)\,xF_3^{\mathrm{NNLO}}(x,Q^2)
-+\cdots.
-\]
 
 The analysis incorporates non-singlet splitting kernels, Wilson coefficient functions, nuclear modifications of the input distributions, and Gegenbauer-polynomial PDF parameterizations.
 
