@@ -5,7 +5,7 @@
 [![Fortran](https://img.shields.io/badge/Language-Fortran-blue)](https://fortran-lang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Numerical implementations for the evolution and analysis of the **non-singlet \(xF_3\)** structure function in charged-current deep-inelastic scattering (DIS), based on a **Laplace-transform solution** of the DGLAP evolution equations.
+Numerical implementations for the evolution and analysis of the **non-singlet \(xF_3\), (\F_2^p\),(\F_2^d\),(\F_2^{NS}\)**structure function in charged-current deep-inelastic scattering (DIS), based on a **Laplace-transform solution** of the DGLAP evolution equations.
 
 The repository contains **Wolfram Mathematica notebooks** and **Fortran programs** for perturbative QCD calculations at:
 
@@ -18,7 +18,7 @@ The repository contains **Wolfram Mathematica notebooks** and **Fortran programs
 
 This repository accompanies the following research article:
 
-> **Laplace-Space Analysis of xF3 Including Nuclear Effects and Gegenbauer-Polynomial Parton Distributions**
+> **Laplace-Space Analysis of **non-singlet \(xF_3\), (\F_2^p\),(\F_2^d\),(\F_2^{NS}\)** Including Nuclear Effects and Gegenbauer-Polynomial Parton Distributions**
 
 **Authors**
 
