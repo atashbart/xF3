@@ -217,10 +217,11 @@ If you use this repository in academic research, please cite both the accompanyi
 
 ## Author
 
-**Atashbar Tehrani, Shahin (1,2) and Sheibani, Javad(1) and Astaraki, Elham(3)**  and  Farashaiian Reyhaneh and  Gheisar Kourosh (Rouhollah),,
+**Atashbar Tehrani, Shahin (2) and Sheibani, Javad(1) and Astaraki, Elham(3)**  and  Farashaiian Reyhaneh(1) and  Gheisar Kourosh (Rouhollah)(4),,
 (1)School of Particles and Accelerators, Institute for Research in Fundamental Sciences (IPM), P.O.Box 19395-5531, Tehran, Iran.
 (2)Department of Physics, Faculty of Nano and Bio Science and Technology, Persian Gulf University, 75169 Bushehr, Iran.
 (3) Department of Physics, Razi University, Kermanshah 67149, Iran.
+(4) Physics Department,Yasouj University,75918-74934,Yasouj,Iran
 
 ---
 
